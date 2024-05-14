@@ -451,22 +451,23 @@
         });
       }
       if ($(".team-slider").length) {
+        console.log($(".team-slider").length);
         $(".team-slider").slick({
-          slidesToShow: 3,
+          slidesToShow: 2,
           slideToScroll: 1,
           arrows: false,
           dots: true,
           infinite: true,
-          cssEase: "linear",
-          autoplay: false,
-          autoplaySpeed: 3000,
+          cssEase: "ease-in",
+          autoplay: true,
+          autoplaySpeed: 2000,
           variableWidth: true,
           variableHeight: true,
           responsive: [
             {
               breakpoint: 1599,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
               },
             },
             {
@@ -478,7 +479,7 @@
             {
               breakpoint: 1199,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
               },
             },
             {
